@@ -1,0 +1,79 @@
+@keyframes slideIn {
+    0% {
+        transform: translateY(100%); /* Начальное положение снизу */
+        opacity: 0; /* Скрыт */
+    }
+    80% {
+        transform: translateY(-10px); /* Небольшой сдвиг вверх */
+        opacity: 1; /* Полная видимость */
+    }
+    100% {
+        transform: translateY(0); /* Конечное положение */
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateY(0); /* Начальное положение */
+        opacity: 1; /* Полная видимость */
+    }
+    100% {
+        transform: translateY(-100%); /* Убираем вверх */
+        opacity: 0; /* Скрываем */
+    }
+}
+
+.container {
+    position: fixed;
+    top: 10px; /* Расположение внизу */
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    background: rgba(255, 255, 255, 0.467);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    color: black;
+    border-radius: 15px;
+    padding: 10px 20px;
+    animation: slideIn 0.5s ease forwards; 
+}
+
+.container.hide {
+    animation: slideOut 0.5s ease forwards; /* Анимация скрытия */
+}
+
+.container.animateIn {
+    animation: slideIn 0.5s ease forwards; /* Анимация появления */
+}
+
+.container h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.uppercase {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    animation: none;
+    background: none;
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+        width: 97%;
+    }
+}

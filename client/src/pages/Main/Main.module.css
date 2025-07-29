@@ -1,0 +1,120 @@
+.container-light {
+	width: 100%;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: scroll;
+	background-color: rgb(255, 68, 68);
+	background-image: url("../../assets/snow.png");
+}
+.container-dark {
+	width: 100%;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: scroll;
+	background-color: rgb(60, 60, 60);
+	background-image: url("../../assets/snow2.png");
+}
+.logo {
+	font-size: 60px;
+	color: white;
+	font-weight: 800;
+}
+.title-cont{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	gap: 30px;
+	padding: 30px;
+	background-color: rgba(0, 255, 255, 0);
+	width: 100%;
+}
+.code-container {
+	width: 500px;
+	min-width: 500px;
+	height: 170px;
+	min-height: 170px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	border: 5px solid rgb(255, 255, 255);
+	padding: 10px;
+	border-radius: 10px;
+	color: white;
+	background-color: rgba(240, 248, 255, 0);
+	gap: 20px;
+	text-align: center;
+}
+.input-cont{
+	display: flex;
+}
+.text{
+	font-size: 30px;
+	font-weight: bold;
+}
+.inputik{
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.code-container input {
+	width: 40px;
+	height: 40px;
+	margin: 0 5px;
+	text-align: center;
+	font-size: 18px;
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 5px;
+}
+
+.code-container input:focus {
+	outline: none;
+	border: 2px solid rgb(0, 0, 0);
+}
+
+.code-container span {
+	margin-left: 10px;
+	font-size: 16px;
+}
+
+.submitCode {
+	background: none;
+    outline: 5px solid white;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 30px;
+	margin-bottom: 10px;
+}
+
+
+@media (max-width: 600px) {
+    .code-container {
+        width: 350px;
+		min-width: 350px;
+    }
+	.text{
+		font-size: 20px;
+	}
+	.title-cont{
+		padding: 0;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+   

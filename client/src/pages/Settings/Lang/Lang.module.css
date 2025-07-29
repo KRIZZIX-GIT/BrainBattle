@@ -1,0 +1,50 @@
+.tipoH1{
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(21, 211, 31, 0);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 20px;
+    gap: 20px;
+}
+.tipoP{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+.container-lang{
+    width: 100%;
+    height: 600px;
+    background-color: rgba(0, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+
+@media (max-width: 850px) {
+    .tipoH1{
+            margin-left: 50px;
+            font-size: 40px;
+    }
+    .theme-swicher{
+        width: 300px;
+    }
+    .theme-swicher-button-dark{
+        margin-left: 145px;
+    }
+}
+@media (max-width: 400px) {
+    .tipoH1{
+        font-size: 25px;
+    }          
+}

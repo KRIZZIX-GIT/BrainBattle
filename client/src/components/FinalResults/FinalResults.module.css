@@ -1,0 +1,225 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000;
+  }
+  
+  .container {
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    text-align: center;
+    
+    background-color: rgba(255, 228, 196, 0);
+  }
+  
+
+
+  .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  
+  .name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .score {
+    font-size: 16px;
+    color: rgb(67, 67, 67);
+  }
+  
+  .position {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .firstPlace {
+    background-color: #ffd700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 15px;
+    width: 300px;
+    min-width: 300px;
+    height: 300px;
+    min-height: 300px;
+    animation: fadeFirst 0.5s ease;
+    animation-delay: 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fadeFirst {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  .firstPlace .name {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .firstPlace .score {
+    font-size: 20px;
+    color: black;
+  }
+
+  .firstPlace .position {
+    font-size: 25px;
+    color: black;
+  }
+  
+  
+  .secondPlace {
+    background-color: #c0c0c0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 5px;
+    border-radius: 15px;
+    width: 200px;
+    min-width: 200px;
+    min-height: 250px;
+    height: 250px;
+    animation: fadeSecond 0.5s ease;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  @keyframes fadeSecond {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .thirdPlace {
+    background-color: #cd7f32;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 5px;
+    border-radius: 15px;
+    width: 200px;
+    min-width: 200px;
+    min-height: 250px;
+    height: 250px;
+    animation: fadeThird 0.5s ease;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fadeThird {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+
+
+
+
+  .onlyPlayer {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 5px;
+    border-radius: 15px;
+    width: 200px;
+    min-width: 200px;
+    min-height: 250px;
+    height: 250px;
+  }
+
+  .firstPlace img, .secondPlace img, .thirdPlace img, .onlyPlayer img {
+    width: 150px;
+    height: 150px;
+    min-height: 150px;
+    min-width: 150px;
+  }
+  
+  .closeButton {
+    background-color: rgb(255, 68, 68);
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .closeButton:hover {
+    background-color: rgb(255, 23, 23);
+  }
+
+
+
+  
+
+  @media (max-width: 1000px) {
+    .container {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .firstPlace,
+    .secondPlace,
+    .thirdPlace,
+    .onlyPlayer {
+      width: 100%;
+      min-width: 100%;
+      height: auto;
+      min-height: auto;
+    }
+
+    .firstPlace img,
+    .secondPlace img,
+    .thirdPlace img,
+    .onlyPlayer img {
+      width: 100px;
+      height: 100px;
+      min-width: 100px;
+      min-height: 100px;
+    }
+  }

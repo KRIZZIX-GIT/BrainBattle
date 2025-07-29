@@ -1,0 +1,121 @@
+.progressBar {
+    width: 600px;
+    height: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: rgb(255, 68, 68);
+}
+
+.tip {
+    margin-top: 10px;
+    width: 600px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #fff;
+}
+
+.BrainBattle {
+    width: 1000px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.total {
+    color: white;
+}
+
+.ronaldo img {
+    width: 50px;
+    height: 50px;
+}
+
+.usernameAndOther {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    color: white;
+    font-size: 30px;
+}
+
+.volumeChanger {
+    display: flex;
+    flex-direction: row-reverse;
+    transform: rotate(270deg);
+    position: absolute;
+    top: -140px;
+    background: white;
+    border-radius: 40px;
+    padding: 16.5px 10px;
+}
+
+.volumeChanger label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    transform: rotate(90deg);
+    font-size: 20px;
+    color: rgb(255, 68, 68);
+}
+.volumeChanger input[type="range"] {
+    -webkit-appearance: none; /* Убираем стандартный стиль */
+    width: 120px; /* Ширина полоски */
+    height: 8px; /* Высота полоски */
+    margin: 10px 0;
+    box-sizing: border-box; /* Учитываем все padding и border */
+}
+  
+.volumeChanger input[type="range"]::-webkit-slider-runnable-track {
+    background: rgb(255, 68, 68); /* Цвет полоски */
+    height: 8px; /* Высота полоски */
+    border-radius: 4px; /* Скругление углов */
+}
+  
+.volumeChanger input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Убираем стандартное оформление */
+    background: rgb(255, 255, 255); /* Цвет бегунка */
+    border: 1px solid rgb(255, 68, 68); /* Цвет границы бегунка */
+    cursor: grab;
+    width: 20px; /* Размеры бегунка */
+    height: 20px;
+    border-radius: 50%; /* Круглый бегунок */
+    position: relative; /* Чтобы работало смещение */
+    top: -6px; /* Центрируем бегунок относительно полоски */
+}
+  
+.volumeContainer {
+    position: fixed;
+    z-index: 99999;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    width: 55px;
+    height: 55px;
+    background: white;
+    color: rgb(255, 68, 68);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.volumeContainer svg {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}

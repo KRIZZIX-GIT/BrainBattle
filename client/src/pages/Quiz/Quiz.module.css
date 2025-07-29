@@ -1,0 +1,421 @@
+.container-light {
+	width: 100%;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: scroll;
+	background-color: rgb(255, 68, 68);
+    background-image: url("../../assets/snow.png");
+}
+
+.preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.container-dark {
+	width: 100%;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: scroll;
+	background-color: rgb(60, 60, 60);
+    background-image: url("../../assets/snow2.png");
+}
+
+.otherContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #bd423400;
+    width: 100%;
+}
+.content1{
+    display: flex;
+    width: 100%;
+    height: 240px;
+    gap: 20px;
+    padding-bottom: 20px;
+    background-color: #d0fd0600;
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+.Quiz-block {
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 15px;
+    padding: 15px;
+    width: 800px; 
+    border: 5px solid rgb(255, 255, 255);
+    margin-top: 20px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.quizName{
+    width: 100%;
+    height: 80px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(152, 148, 45, 0);
+}
+.quizInfo{
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(45, 102, 152, 0);
+}
+.imageCategory {
+    border-radius: 15px;
+    width: 350px;
+    min-width: 350px;
+    height: 220px;
+    outline: 3px solid rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center;
+}
+.translate-button{
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    border-radius: 10px;
+    border: 2px solid black;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    gap: 10px;
+}
+
+.tag {
+    background-color: #e0e0e0;
+    border-radius: 12px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.likes {
+    font-size: 20px;
+    color: rgb(255, 255, 255); 
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 5px;
+	cursor: pointer;
+}
+
+.liked {
+	color: #e74c3c; 
+}
+
+.comments {
+    font-size: 20px;
+    color: rgb(255, 255, 255); 
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 5px;
+}
+
+.create-lobby {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    width: 90%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.create-lobby:hover {
+    background-color: #bd4134; 
+    transform: scale(1.06);
+}
+
+.commentsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: #bd423400;
+}
+
+.commentsContainer {
+    color: white;
+}
+
+.title {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
+.comment-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 300px;
+    max-height: 300px;
+    padding: 10px;
+    overflow-y: scroll;
+    background-color: rgba(0, 255, 255, 0);
+}
+
+.tab-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 255, 255, 0);
+}
+
+.addComment {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    gap: 20px;
+}
+
+.writeComment {
+    width: 100%;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+}
+
+.submitComment {
+    width: 45px;
+    flex-shrink: 0;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 30px;
+    border: none;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.tab {
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: 4px solid white;
+    background: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+}
+
+.tab.active {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.tab:hover {
+    background-color: #bd4134;
+    color: white;
+}
+
+.comment {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgba(9, 119, 215, 0);
+    gap: 20px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    overflow-x: scroll;
+}
+.NicknameAndComment{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+.comment-username {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+.comment-comment {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+.comment img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    outline: 3px solid rgb(255, 255, 255);
+}
+
+.leaderboardContainer {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Мягкая тень */
+    width: 100%;
+    padding-bottom: 20px;
+    max-width: 470px;
+    margin: 20px auto; /* Центрирование */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .leaderboardList {
+    list-style-type: none; /* Убираем стандартные маркеры списка */
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+  }
+  
+  .leaderboardList span {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .leaderboardList img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 255, 255);
+  }
+  
+  .leaderboard-entry {
+    display: flex;
+    justify-content: space-between; /* Выравниваем имя и очки по краям */
+    padding: 10px 15px;
+    width: 100%;
+    margin: 5px 0;
+    background-color: #fff; /* Белый фон для каждой записи */
+    border-radius: 5px; /* Закругленные углы */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Мягкая тень */
+    font-size: 21px;
+    color: black;
+    transition: transform 0.2s, box-shadow 0.2s; /* Анимация при наведении */
+  }
+
+  .usernameAndAvatar {
+    width: calc(100% - 105px);
+    white-space: nowrap; 
+    overflow: hidden;    
+    text-overflow: ellipsis;
+  }
+
+  
+  .leaderboard-entry:hover {
+    transform: translateY(-2px); /* Приподнимаем при наведении */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Увеличиваем тень */
+  }
+  
+  .leaderboard-entry:nth-child(1) {
+    background-color: #ffd700; /* Золотой для первого места */
+    font-weight: bold;
+  }
+  
+  .leaderboard-entry:nth-child(2) {
+    background-color: #c0c0c0; /* Серебряный для второго места */
+  }
+  
+  .leaderboard-entry:nth-child(3) {
+    background-color: #cd7f32; /* Бронзовый для третьего места */
+  }
+
+@media (max-width: 800px) {
+    .content1{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: auto;
+    }
+    .Quiz-block {
+        width: 95%;
+    }
+}
+@media (max-width: 415px) {
+    .imageCategory {
+        width: 100%;
+        min-width: 100%;
+        height: auto;
+    }
+}
